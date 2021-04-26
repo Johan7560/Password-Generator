@@ -1,0 +1,142 @@
+/*################################# Page Defaults ############################*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #41b3a3, black);
+}
+
+/*################################## Main Container #############################*/
+.container_1 {
+  padding-top: 5%;
+  display: grid;
+
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 0.5fr 0.8fr 0.8fr 0.8fr 1fr;
+  grid-template-areas:
+    "title title title"
+    ". . ."
+    "generate . define"
+    ". password ."
+    "copy_button checklist random"
+    ". checklist .";
+}
+
+/*################################### Grid Area ################################*/
+.title {
+  grid-area: title;
+  justify-self: center;
+  font-size: 30px;
+}
+
+.generate {
+  grid-area: generate;
+}
+
+.copy_button {
+  grid-area: copy_button;
+}
+
+.password {
+  grid-area: password;
+  font-size: 20px;
+}
+
+.define {
+  grid-area: define;
+}
+
+.random {
+  grid-area: random;
+}
+
+.checklist {
+  grid-area: checklist;
+}
+
+/*################################## Button Styling ##################################*/
+button {
+  height: 100%;
+  width: 80%;
+  background-color: #e27d60;
+  color: white;
+  margin: 0% 10% 0% 10%;
+  border: 10px double white;
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+button:hover {
+  font-size: 20px;
+  box-shadow: 5px 5px 10px white;
+}
+
+/*########################## Password Display Styling ##################################*/
+.txt_password {
+  height: 85%;
+  width: 100%;
+  border-radius: 10px;
+  border-style: inherit;
+  font-size: 40px;
+  opacity: 0.8;
+  box-shadow: 10px 10px 5px black;
+  padding-left: 1%;
+}
+.txt_password::placeholder {
+  color: black;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+/*########################## Text Styling ##################################*/
+h1 {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 5px 5px 5px black;
+}
+
+/*######################## Checklist ###########################*/
+p {
+  display: inline-table;
+}
+
+.checklist {
+  box-shadow: 10px 15px 20px black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#showChecklist {
+  display: none;
+}
+
+h2 {
+  margin: auto;
+}
+
+#length {
+  width: 35px;
+}
+
+/*######################### Animation ######################*/
+
+.anim {
+  animation-name: title;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes title {
+  0% {
+  }
+  50% {
+    text-shadow: black 0px 100px;
+  }
+  75% {
+    text-shadow: #c38d9e 0px 100px 100px;
+  }
+}

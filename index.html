@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container_1" >
+        <div class="title">
+                <h1 class="anim">Password Generator</h1><hr>
+            </div>
+            <div class="generate">
+                <button id="generatePassword">Generate</button>
+            </div>
+            <div class="copy_button">
+                <button id="copy">Copy</button>
+            </div>
+            <div class="password">
+                <input name="password_Gen" id="password_Gen" type="text" size="100" placeholder="Your new password will display here." class="txt_password">
+            </div>
+            <div class="define">
+                <button id="defined">Define Password</button>
+            </div>
+            <div class="random">
+                <button id="generateDefined">Generate Defined Password</button>
+            </div>
+            <div id="showChecklist" class="checklist">
+                <h2>Define your Password</h2><br>
+
+                <p>Password must contain <strong>Numbers</strong> (eg.12345).</p>
+                <input type="radio" id="yes_button_1" name="button_1" value="">
+                <label for="yes_button_1"> Yes</label><br>
+                <!-- <input type="radio" id="yes_button_1" name="button_1" value="false">
+                <label for="yes_button_1"> No</label>--><br>
+
+                <p>Password must contain <strong>Symbols</strong>  (eg.@#$%).</p>
+                <input type="radio" id="yes_button_2" name="button_2" value="true">
+                <label for="button_2"> Yes</label>
+                <!-- <input type="radio" id="no_button_2" name="button_2" value="false">
+                <label for="button_2"> No</label>--><br><br>
+                
+                <p>Password must contain <strong>Uppercase Characters</strong>  (eg.ABC).</p>
+                <input type="radio" id="yes_button_3" name="button_3" value="true">
+                <label for="button_3"> Yes</label>
+                <!-- <input type="radio" id="no_button_3" name="button_3" value="false">
+                <label for="button_3"> No</label> -->
+
+                
+                <br><br><label for="length">Password <strong>Length</strong> (min 8 - max 32)</label>
+                <input type="number" id="length" min="8" max="32">
+            </div>
+
+        </div>
+    </div> 
+    
+    <script src="app.js" async></script>
+</body>
+
+</html>
