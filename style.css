@@ -1,0 +1,62 @@
+body {
+	background: conic-gradient(
+		from 90deg at 50% 125%,
+		#20b2aa,
+		#135da5,
+		#0d0895,
+		#4b0082,
+		#4b0082,
+		#0d0895,
+		#135da5,
+		#20b2aa
+	);
+	margin: 0;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+/*########################## Text Styling ##################################*/
+.jis {
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+hr {
+	color: aliceblue;
+	padding: 2px;
+}
+
+.fourBtns {
+	border: 2px solid lime;
+}
+/*######################## Checklist ###########################*/
+
+.checklist {
+	box-shadow: 10px 15px 20px rgb(226, 12, 12);
+
+	/* padding: 10px; */
+	border-radius: 10px;
+}
+
+#showChecklist {
+	display: none;
+}
+
+/*######################### Animation ######################*/
+
+.anim {
+	animation-name: title;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+@keyframes title {
+	0% {
+	}
+	50% {
+		text-shadow: black 0px 100px;
+	}
+	75% {
+		text-shadow: #c38d9e 0px 100px 100px;
+	}
+}
